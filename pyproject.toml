@@ -17,3 +17,6 @@ promptprobe = "promptprobe.cli:app"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+promptprobe = ["attacks/payloads/*.yaml"]
