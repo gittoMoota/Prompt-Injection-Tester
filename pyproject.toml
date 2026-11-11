@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "promptprobe"
+version = "0.1.0"
+description = "Prompt-injection tester for LLM apps"
+requires-python = ">=3.10"
+dependencies = ["httpx", "typer", "pyyaml", "jinja2"]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff", "fastapi", "uvicorn"]
+
+[project.scripts]
+promptprobe = "promptprobe.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
