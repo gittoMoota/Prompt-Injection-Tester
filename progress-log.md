@@ -34,3 +34,11 @@
 - Added CanaryDetector that finds the secret in plain, separated, reversed, rot13, hex and base64 forms
 - Added unit tests and an integration test: every bundled attack leaks from the vulnerable bot, and only the encoding attacks leak from the hardened bot
 - Next: runner
+
+
+## Step 6: runner
+- Added Runner that sends each attack to a target, asks the detector for a verdict and builds a Report
+- Target errors are recorded in the report and the run continues
+- Added an optional callback so the command line can show progress
+- Added unit tests with a fake target and integration tests against the demo bot (vulnerable: 15 of 15 leaks, hardened: 3 of 15)
+- Next: JSON and HTML reporters
