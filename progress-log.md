@@ -26,3 +26,11 @@
 - Vulnerable mode leaks to every bundled attack; hardened mode (BOT_HARDENED=1) refuses most but still leaks via encoding tricks
 - Added unit tests, including a check that the bot reacts to every bundled attack
 - Next: HTTP target and canary detector
+
+
+## Step 5: HTTP target and canary detector
+- Added Target and Detector interfaces
+- Added HttpTarget to send prompts to any JSON chat endpoint, with clear errors
+- Added CanaryDetector that finds the secret in plain, separated, reversed, rot13, hex and base64 forms
+- Added unit tests and an integration test: every bundled attack leaks from the vulnerable bot, and only the encoding attacks leak from the hardened bot
+- Next: runner
