@@ -19,3 +19,10 @@
 - Added filtering by category and minimum severity, plus validation errors
 - Added unit tests, including a test for the bundled payloads
 - Next: demo vulnerable chatbot
+
+
+## Step 4: demo vulnerable chatbot
+- Added a keyword-based FastAPI chatbot with a hidden canary secret
+- Vulnerable mode leaks to every bundled attack; hardened mode (BOT_HARDENED=1) refuses most but still leaks via encoding tricks
+- Added unit tests, including a check that the bot reacts to every bundled attack
+- Next: HTTP target and canary detector
