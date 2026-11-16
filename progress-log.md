@@ -42,3 +42,12 @@
 - Added an optional callback so the command line can show progress
 - Added unit tests with a fake target and integration tests against the demo bot (vulnerable: 15 of 15 leaks, hardened: 3 of 15)
 - Next: JSON and HTML reporters
+
+
+## Step 7: JSON and HTML reporters
+- Added a Reporter interface with JsonReporter and HtmlReporter
+- Reports show the pass rate, a per-category summary and every attack with its reply and evidence
+- HTML output escapes target replies, because replies are untrusted text
+- Added a script that scans the demo bot and writes sample reports
+- Renamed tests/intergration to tests/integration
+- Next: command-line interface
