@@ -19,4 +19,4 @@ promptprobe = "promptprobe.cli:app"
 where = ["src"]
 
 [tool.setuptools.package-data]
-promptprobe = ["attacks/payloads/*.yaml"]
+promptprobe = ["attacks/payloads/*.yaml", "reporting/templates/*.j2"]
