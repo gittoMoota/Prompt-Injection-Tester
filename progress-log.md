@@ -51,3 +51,10 @@
 - Added a script that scans the demo bot and writes sample reports
 - Renamed tests/intergration to tests/integration
 - Next: command-line interface
+
+
+## Step 8: command-line interface
+- Added `promptprobe scan` (filters, custom field names, headers, report format, fail-on-leak exit code) and `promptprobe attacks`
+- Exit codes: 0 ok, 1 leaks found with --fail-on-leak, 2 usage or connection error
+- Added CLI tests using Typer's test runner and fake targets
+- Next: GitHub Actions CI
