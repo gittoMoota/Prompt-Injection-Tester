@@ -1,0 +1,23 @@
+### Preliminary results: demo chatbot
+
+The tool was run against the demo chatbot in two modes. The demo is rule-based, so these results validate the tool, not the safety of any real model.
+
+| | Vulnerable mode | Hardened mode |
+|---|---|---|
+| Attacks run | 15 | 15 |
+| Leaked | 15 | 3 |
+| Passed | 0 | 12 |
+| Pass rate | 0% | 80% |
+
+| Category | Vulnerable (leaked/total) | Hardened (leaked/total) |
+|---|---|---|
+| Direct override | 3/3 | 0/3 |
+| Role play | 3/3 | 0/3 |
+| Translation | 3/3 | 0/3 |
+| Indirect | 3/3 | 0/3 |
+| Encoding | 3/3 | 3/3 |
+
+- RQ1: all five attack categories ran as deterministic, repeatable test cases.
+- RQ2: the canary detector found 12 plain leaks and 3 disguised leaks (reversed, base64, character-separated). A plain text search would have missed all three disguised leaks and rated the hardened bot 100% safe instead of 80%.
+- RQ3: the tool clearly separated the two targets. The hardened bot blocked every attack whose wording its filter recognised but leaked to all three encoding attacks, consistent with OWASP's warning that encodings can evade filters (OWASP GenAI Security Project, 2025).
+- Limits: three attacks per category, one run and a rule-based target, so no statistical claims are made.
