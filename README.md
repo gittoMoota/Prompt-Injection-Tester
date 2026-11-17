@@ -87,9 +87,7 @@ The runner depends only on interfaces (target, detector, reporter), so new targe
 
 A multilingual attack category (isiZulu, Sesotho, Setswana, Afrikaans). Research shows low-resource-language prompts can bypass safeguards ([Yong et al., 2023](https://arxiv.org/abs/2310.02446)).
 
-## Responsible use
 
-Only test systems you own or have explicit permission to test, and only with a fake canary, never a real secret. Reports contain full model replies, so treat them as sensitive.
 
 ## Development
 
