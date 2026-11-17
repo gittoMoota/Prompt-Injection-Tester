@@ -4,7 +4,7 @@ A Python tool that tests chatbots and LLM apps for prompt-injection weaknesses.
 
 # Prompt Injection Tester
 
-![CI](https://github.com/YOUR-USERNAME/YOUR-REPO/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/gittoMoota/Prompt-Injection-Tester/actions/workflows/ci.yml/badge.svg)
 
 A lightweight Python command-line tool that tests chatbots and LLM apps for prompt-injection leaks. It sends categorised attack prompts to a chat endpoint and uses a planted **canary** secret to decide, deterministically, whether the app leaked its hidden instructions, even when the secret is reversed, encoded or spread out.
 
