@@ -1,4 +1,4 @@
-# Prompt Injection Tester
+# Prompt Injection Tester (Status: in active development. Incomplete README.md)
 
 A Python tool that tests chatbots and LLM apps for prompt-injection weaknesses.
 
