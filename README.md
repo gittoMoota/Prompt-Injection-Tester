@@ -2,7 +2,6 @@
 
 A Python tool that tests chatbots and LLM apps for prompt-injection weaknesses.
 
-# Prompt Injection Tester
 
 ![CI](https://github.com/gittoMoota/Prompt-Injection-Tester/actions/workflows/ci.yml/badge.svg)
 
