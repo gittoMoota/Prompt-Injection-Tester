@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "promptprobe"
 version = "0.1.0"
 description = "Prompt-injection tester for LLM apps"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 dependencies = ["httpx", "typer", "pyyaml", "jinja2"]
 
 [project.optional-dependencies]
