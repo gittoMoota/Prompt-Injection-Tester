@@ -58,3 +58,15 @@
 - Exit codes: 0 ok, 1 leaks found with --fail-on-leak, 2 usage or connection error
 - Added CLI tests using Typer's test runner and fake targets
 - Next: GitHub Actions CI
+
+
+## Step 9: GitHub Actions CI
+- Added a workflow that installs the project, runs ruff and pytest on Python 3.11 and 3.13 for every push and pull request
+- Raised the minimum Python version to 3.11
+- Next: README and limitations document
+
+
+## Step 10: README and limitations
+- Wrote the README with quick start, options, example results, design diagram and responsible-use note
+- Added docs/limitations.md
+- Next: real AI target
